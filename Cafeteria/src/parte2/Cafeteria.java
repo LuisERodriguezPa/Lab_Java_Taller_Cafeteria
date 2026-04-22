@@ -8,12 +8,12 @@ public class Cafeteria {
         int[] pedidoProducto = {0, 2, 1, 4, 0, 3}; // índice del producto en cada pedido
         int[] pedidoCantidad = {2, 1, 3, 1, 1, 2}; // unidades por pedido
         double subtotal;
-        for(int i=0; i<6; i++){
+        for(int i=0; i<pedidoProducto.length; i++){
             System.out.println("Numero de pedido: "+(i+1));
             System.out.println("Nombre del producto: "+nombres[pedidoProducto[i]]);
             System.out.println("Cantidad: "+pedidoCantidad[i]);
-            System.out.println("Categoria: "+categorias[i]);
-            switch (categorias[i]){
+            System.out.print("Categoria: ");
+            switch (categorias[pedidoProducto[i]]){
                 case 'B':
                     System.out.println("Bebida Caliente");
                     break;
@@ -29,6 +29,7 @@ public class Cafeteria {
             }
              subtotal = pedidoCantidad[i] * precios[pedidoProducto[i]];
             System.out.println("Subtotal: "+subtotal);
+            System.out.println("===============================================");
 
         }
     }
