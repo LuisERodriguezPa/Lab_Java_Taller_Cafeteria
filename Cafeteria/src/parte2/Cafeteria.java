@@ -29,6 +29,11 @@ public class Cafeteria {
             }
              subtotal = pedidoCantidad[i] * precios[pedidoProducto[i]];
             System.out.println("Subtotal: "+subtotal);
+            if(subtotal>12000){
+                subtotal = subtotal * 0.9;
+                System.out.println("Se aplico un descuento del 10%");
+                System.out.println("Valor Final: "+subtotal);
+            }
             System.out.println("===============================================");
 
         }
