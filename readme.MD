@@ -1,5 +1,5 @@
-Luis Eduardo Rodriguez
-Handry Moran
+Luis Eduardo Rodriguez<br>
+Handry Moran<br>
 Julian Valderrama
 
 
